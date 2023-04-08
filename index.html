@@ -17,8 +17,8 @@
   <!--Navbar Links-->
   <nav id="nav">
     <ul>
-      <li class="shape-circle circle-one"><a href="#">Contact</a></li>
-      <li class="shape-circle circle-two"><a href="#">Blog</a></li>
+      <li class="shape-circle circle-one"><a href="contact _us.html">Contact</a></li>
+      <li class="shape-circle circle-two"><a href="#">About us</a></li>
       <li class="shape-circle circle-three"><a href="#">Work</a></li>
       <li class="shape-circle circle-five">
         <a href="#">Home</a>
@@ -35,11 +35,20 @@
 
       
       <!-- search bar -->
-    <div class="searchbox">
-         <input type="search" id="search" placeholder="Search" />
-         <button>search</button>
-    </div>
+      <form id="yt-form">
+        <p><input type="text" id="keyword-input" placeholder="Enter keyword" required></p>
+      
+        <p>
+            <input id="submit" type="submit" value="Submit">
+        </p>
+    </form>
+
+    <div id="videoListContainer"></div>
         
         <script src="script.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="custom.js"></script>
 </body>
 </html>

@@ -233,7 +233,7 @@ nav.visible li:last-child a {
 
 /* code for search bar */
 
-.searchbox{
+#yt-form{
     position:absolute;
     box-sizing: border-box;
     margin: auto auto;
@@ -241,15 +241,18 @@ nav.visible li:last-child a {
     top: 50vh;
 }
 
-#search {
+#keyword-input{
     margin: 0 auto;
     display: inline-block;
     width: 100vh;
     height: 7vh;
     border-radius: 30vh;
 }
-.searchbox button{
+#yt-form #submit{
     border-radius: 30vh;   
     width: 20vh; 
     height: 7vh;
+}
+#videoListContainer{
+    
 }
