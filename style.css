@@ -226,33 +226,58 @@ nav.visible li:last-child a {
 
 .head h1 {
     display: inline;
-    margin: 8vh;
+    /* margin: 8vh; */
     top: 0vh;
+    left: 8vh;
     position: RELATIVE;
+    font-size: 40px;
+    
 }
 
 /* code for search bar */
 
 #yt-form{
     position:absolute;
-    box-sizing: border-box;
     margin: auto auto;
-    left: 50vh;
+    left: 60vh;
     top: 50vh;
+    flex-flow: row wrap;
+    border: red;
 }
 
 #keyword-input{
     margin: 0 auto;
     display: inline-block;
-    width: 100vh;
+    position: relative;
+    width: 80vh;
     height: 7vh;
     border-radius: 30vh;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgba(18, 13, 13, 0.388);
+    transition: ease 1s;
+}
+#keyword-input:hover{
+    width: 90vh;
 }
 #yt-form #submit{
     border-radius: 30vh;   
     width: 20vh; 
     height: 7vh;
+    position: relative;
+    top: 2vh;
+    left: 35vh;
+    background-color: rgb(173, 11, 253);
+    border: none;
+    transition: ease 1s;
+}
+#yt-form #submit:hover{
+    background-color: red;
 }
 #videoListContainer{
+    /* border:2px solid green; */
+    position: relative;
+    top: 50vh;
     
 }
