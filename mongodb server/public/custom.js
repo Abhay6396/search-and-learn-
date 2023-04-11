@@ -33,7 +33,7 @@ function execute() {
         "part": 'snippet',
         "type": 'video',
         "order": 'rating',
-        "maxResults": '4',
+        "maxResults": '50',
         "q": searchString
     };
   

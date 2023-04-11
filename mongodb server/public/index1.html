@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp Form - MongoDB</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>LMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-6 main">
-                <form action="/sign_up" method="POST">
-                    <h2>SignUp Form</h2>
-                    <input type="text" class="box" id="name" name="name" placeholder="Name" required />
-                    <br>
-                    <input type="text" class="box" id="email" name="email" placeholder="Email" required />
-                    <br>
-                    <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required />
-                    <br>
-                    <input type="text" class="box" id="password" name="password" placeholder="Password" required />
-                    <br>
-                    <input type="submit" value="Submit" id="submit" />
-                </form>
-            </div>
-            <div class="col-md-3">
-            </div>
-        </div>
+    <!--HamBurger Icon-->
+<div class="bars" id="nav-action">
+    <span class="bar"> </span>
+  </div>
+  
+  <!--Navbar Links-->
+  <nav id="nav">
+    <ul>
+      <li class="shape-circle circle-one"><a href="contact.html">Contact</a></li>
+      <li class="shape-circle circle-two"><a href="about.html">About us</a></li>
+      <li class="shape-circle circle-three"><a href="#">Blog</a></li>
+      <li class="shape-circle circle-five">
+        <a href="#">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <!--Main Body Content-->
+    <div class="head">
+        <img src="logo.png" alt="">
+        <h1>SEARCH & LEARN</h1>
     </div>
+    <!-- type here -->
+  
 
+      
+      <!-- search bar -->
+      <form id="yt-form">
+        <p><input type="text" id="keyword-input" placeholder="Enter and Learn" required></p>
+      
+        <p>
+            <input id="submit" type="submit" value="Submit">
+        </p>
+    </form>
+
+    <div id="videoListContainer"></div>
+        
+        <script src="script.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="custom.js"></script>
 </body>
-
 </html>
